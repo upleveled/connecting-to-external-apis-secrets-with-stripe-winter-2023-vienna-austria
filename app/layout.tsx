@@ -1,6 +1,15 @@
-import './globals.css'
+export const metadata = {
+  title: { default: 'UpLeveled - Stripe', template: '%s | UpLeveled Stripe' },
+  icons: {
+    shortcut: '/images/logo.png',
+  },
+};
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       {/*
@@ -10,5 +19,5 @@ export default function RootLayout({ children }) {
       <head />
       <body>{children}</body>
     </html>
-  )
+  );
 }
